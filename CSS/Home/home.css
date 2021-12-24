@@ -314,6 +314,9 @@ html body {
 .home-hero-section .menu-board .menu-navlinks a {
   text-decoration: none;
   color: #0B2436;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "D-DIN";
   font-size: 2rem;
   font-weight: 500;
@@ -337,6 +340,9 @@ html body {
 .home-hero-section .menu-board .menu-connect-links a {
   text-decoration: none;
   color: #858686;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "D-DIN";
   font-size: 1.4rem;
   font-weight: 500;
@@ -367,39 +373,46 @@ html body {
           flex-grow: 1;
   border: none;
   outline: none;
+  text-transform: uppercase;
 }
 
 .home-hero-section .menu-board .updates-form input::-webkit-input-placeholder {
   font-family: "D-DIN";
   font-weight: 500;
   font-size: 1.4rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .home-hero-section .menu-board .updates-form input:-ms-input-placeholder {
   font-family: "D-DIN";
   font-weight: 500;
   font-size: 1.4rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .home-hero-section .menu-board .updates-form input::-ms-input-placeholder {
   font-family: "D-DIN";
   font-weight: 500;
   font-size: 1.4rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .home-hero-section .menu-board .updates-form input::placeholder {
   font-family: "D-DIN";
   font-weight: 500;
   font-size: 1.4rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .home-hero-section .menu-board .updates-form .submit-button {
   opacity: 0.5;
   cursor: pointer;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+
+.home-hero-section .menu-board .updates-form .submit-button:hover {
+  opacity: 1;
 }
 
 .home-hero-section .menu-board .form-underline {
@@ -589,7 +602,8 @@ footer {
 }
 
 footer .margin-set-container {
-  padding: 0 3rem;
+  padding: 3rem;
+  padding-bottom: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,65 +835,8 @@ footer .margin-set-container .connect-and-updates {
   .reach-out-section div .reach-out-link p {
     width: 16ch;
   }
-}
-
-/* Styling for laptops */
-@media (min-width: 970px) {
-  .home-hero-section .hero-img-container {
-    position: absolute;
-    top: 13.8rem;
-    right: -46rem;
-  }
-  .home-hero-section .hero-img-container .home-image {
-    width: 72%;
-  }
-  .home-hero-section .extra-links::before {
-    width: 46%;
-  }
-  .work-display-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .work-display-section .science-section,
-  .work-display-section .approach-section,
-  .work-display-section .applications-section {
-    width: 33.3%;
-  }
-  .work-display-section .science-section a,
-  .work-display-section .approach-section a,
-  .work-display-section .applications-section a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-  }
-  .work-display-section .science-section .section-image,
-  .work-display-section .approach-section .section-image,
-  .work-display-section .applications-section .section-image {
-    width: 100%;
-  }
-  .work-display-section .science-section .section-image {
-    width: 25rem;
-  }
-  .work-display-section .approach-section .section-image {
-    margin-top: 4.5rem;
-  }
-  .work-display-section .approach-section .section-link {
-    margin-top: 3rem;
-  }
-  .work-display-section .applications-section .section-image {
-    margin-top: 2rem;
-  }
-  .work-display-section .applications-section .section-link {
-    margin-top: 0.5rem;
-  }
   footer .margin-set-container {
+    padding-bottom: 0;
     padding: 6rem;
     margin: auto;
   }
@@ -968,7 +925,209 @@ footer .margin-set-container .connect-and-updates {
     border: none;
     background-color: transparent;
     min-width: 20ch;
-    width: 95%;
+    width: 92%;
+    outline: none;
+    text-transform: uppercase;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup input::-webkit-input-placeholder {
+    opacity: 0.3;
+    font-family: "D-DIN";
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup input:-ms-input-placeholder {
+    opacity: 0.3;
+    font-family: "D-DIN";
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup input::-ms-input-placeholder {
+    opacity: 0.3;
+    font-family: "D-DIN";
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup input::placeholder {
+    opacity: 0.3;
+    font-family: "D-DIN";
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup svg {
+    opacity: 0.5;
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+    cursor: pointer;
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup svg:hover {
+    opacity: 1;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup::after {
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background-color: #0B2436;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    opacity: 0.3;
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Styling for laptops */
+@media (min-width: 970px) {
+  .home-hero-section .hero-img-container {
+    position: absolute;
+    top: 13.8rem;
+    right: -46rem;
+  }
+  .home-hero-section .hero-img-container .home-image {
+    width: 72%;
+  }
+  .home-hero-section .extra-links::before {
+    width: 46%;
+  }
+  .work-display-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-display-section .science-section,
+  .work-display-section .approach-section,
+  .work-display-section .applications-section {
+    width: 33.3%;
+  }
+  .work-display-section .science-section a,
+  .work-display-section .approach-section a,
+  .work-display-section .applications-section a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .work-display-section .science-section .section-image,
+  .work-display-section .approach-section .section-image,
+  .work-display-section .applications-section .section-image {
+    width: 100%;
+  }
+  .work-display-section .science-section .section-image {
+    width: 25rem;
+  }
+  .work-display-section .approach-section .section-image {
+    margin-top: 4.5rem;
+  }
+  .work-display-section .approach-section .section-link {
+    margin-top: 3rem;
+  }
+  .work-display-section .applications-section .section-image {
+    margin-top: 2rem;
+  }
+  .work-display-section .applications-section .section-link {
+    margin-top: 0.5rem;
+  }
+  footer .margin-set-container {
+    padding-bottom: 0;
+    padding: 6rem;
+    margin: auto;
+  }
+  footer .margin-set-container .logo-and-copyright {
+    width: auto;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  footer .margin-set-container .logo-and-copyright .logo {
+    margin-right: 7%;
+  }
+  footer .margin-set-container .connect-and-updates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    float: right;
+  }
+  footer .margin-set-container .connect-and-updates .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  footer .margin-set-container .connect-and-updates .navlinks a {
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #858686;
+    font-family: "D-DIN";
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    -webkit-transition: color 0.08s ease-in-out;
+    transition: color 0.08s ease-in-out;
+  }
+  footer .margin-set-container .connect-and-updates .navlinks a:hover {
+    color: #0B2436;
+  }
+  footer .margin-set-container .connect-and-updates div {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  footer .margin-set-container .connect-and-updates div .connect-links a {
+    display: block;
+    text-decoration: none;
+    color: #858686;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "D-DIN";
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    -webkit-transition: color 0.08s ease-in-out;
+    transition: color 0.08s ease-in-out;
+  }
+  footer .margin-set-container .connect-and-updates div .connect-links a:hover {
+    color: #0B2436;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup {
+    margin-top: 2rem;
+    position: relative;
+  }
+  footer .margin-set-container .connect-and-updates div .updates-signup input {
+    border: none;
+    background-color: transparent;
+    min-width: 20ch;
+    width: 94%;
     outline: none;
     text-transform: uppercase;
   }
